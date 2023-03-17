@@ -18,22 +18,3 @@ with st.beta_expander('Industrial Lighting'):
     brand_name = st.selectbox('Select a brand', list(brands.keys()))
     # display the website for the selected brand
     st.write(f'The website for {brand_name} is {brands[brand_name]}.')
-
-# create an expander for the second light fixture
-with st.beta_expander('Light Fixture 2'):
-    # add the image
-    st.image('https://example.com/image2.jpg')
-    # add the selectbox for the brands
-    brand_name = st.selectbox('Select a brand', list(brands.keys()))
-    # display the website for the selected brand
-    st.write(f'The website for {brand_name} is {brands[brand_name]}.')
-
-# create an expander for the third light fixture
-with st.beta_expander('Light Fixture 3'):
-    # add the image
-    st.image('https://example.com/image3.jpg')
-    # add the selectbox for the brands
-    brand_name = st.selectbox('Select a brand', list(brands.keys()))
-    # display the website for the selected brand
-    st.write(f'The website for {brand_name} is {brands[brand_name]}.')
-
