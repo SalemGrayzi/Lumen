@@ -23,4 +23,9 @@ with st.beta_expander('Industrial Lighting'):
     #brand_name = st.selectbox('Select a brand', list(brands.keys()))
     # display the website for the selected brand
     #st.write(f'The website for {brand_name} is {brands[brand_name]}.')
+    
+    
+edited_df = st.experimental_data_editor(df)
+favorite_command = edited_df.loc[edited_df["rating"].idxmax()]["command"]
+st.markdown(f"Your favorite command is **{favorite_command}** 🎈")
 
