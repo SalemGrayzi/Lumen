@@ -51,8 +51,8 @@ if submit and email == actual_email and password == actual_password:
     with st.beta_expander('Downlight/Spotlight/Tracklights/LED Panel'):
     # add the selectbox for the brands
         st.image('https://storage.googleapis.com/tryka-dev.appspot.com/Products/Downlights/Abner%203/Renders/Abner%203_R_White.webp', use_column_width=True)
-        if st.button('Show Brands '):
-            Downlight_Spotlight_Tracklights = pd.DataFrame(
+        #if st.button('Show Brands '):
+        Downlight_Spotlight_Tracklights = pd.DataFrame(
             [
                 {"Brand": "Ledvance", "Link": 'https://www.ledvance.asia'},
                 {"Brand": "Prilux", "Link": 'https://www.prilux.es'},
@@ -68,15 +68,15 @@ if submit and email == actual_email and password == actual_password:
                 {"Brand": "Ikizler", "Link": "https://www.ikizlerlighting.com"},
                 ]
             )
-            edited_Downlight_Spotlight = st.experimental_data_editor(Downlight_Spotlight_Tracklights, num_rows="dynamic")
+        edited_Downlight_Spotlight = st.experimental_data_editor(Downlight_Spotlight_Tracklights, num_rows="dynamic")
 
 
 # create an expander for the first light fixture
     with st.beta_expander('Wall-Mount'):
     # add the selectbox for the brands
         st.image('https://storage.googleapis.com/tryka-dev.appspot.com/Products/Architectural%20Accent/Tuba%204%20UpDown/Renders/Tuba%204%20UpDown_R_Grey.webp', use_column_width=True)
-        if st.button('Show Brands  '):
-            Wall_Mount = pd.DataFrame(
+        #if st.button('Show Brands  '):
+        Wall_Mount = pd.DataFrame(
             [
                 {"Brand": "Tryka", "Link": "https://tryka.com/products"},
                 {"Brand": "Dextra", "Link": 'https://www.dextragroup.co.uk/dextra-lighting/'},
@@ -87,14 +87,14 @@ if submit and email == actual_email and password == actual_password:
                 {"Brand": "Light34/Light Solution(Oman)", "Link": "https://www.light34.com/en/outdoor-lighting-15"},
                 ]
             )
-            edited_Wall_Mount = st.experimental_data_editor(Wall_Mount, num_rows="dynamic")
+        edited_Wall_Mount = st.experimental_data_editor(Wall_Mount, num_rows="dynamic")
 
 # create an expander for the first light fixture
     with st.beta_expander('HighBay/FloodLights'):
     # add the selectbox for the brands
         st.image('https://www.trilux.com/products/asset/GroupImageMedium/Ondo_T_TB_LED_03_DB_WEB', use_column_width=True)
-        if st.button('Show Brands   '):
-            HighBay_Flood_Lights = pd.DataFrame(
+        #if st.button('Show Brands   '):
+        HighBay_Flood_Lights = pd.DataFrame(
             [
                 {"Brand": "Ledvance", "Link": 'https://www.ledvance.asia'},
                 {"Brand": "Prilux", "Link": 'https://www.prilux.es'},
@@ -113,14 +113,14 @@ if submit and email == actual_email and password == actual_password:
                 {"Brand": "MGL Lighting", "Link": "http://www.mgl-led.com/commercial-lighting"},
                 ]
             )
-            edited_HighBay_Flood_Lights = st.experimental_data_editor(HighBay_Flood_Lights, num_rows="dynamic")
+        edited_HighBay_Flood_Lights = st.experimental_data_editor(HighBay_Flood_Lights, num_rows="dynamic")
 
             # create an expander for the first light fixture
     with st.beta_expander('Street Light/Poles'):
     # add the selectbox for the brands
         st.image('https://d7rh5s3nxmpy4.cloudfront.net/CMP1303/prilux-versa-xl.png', use_column_width=True)
-        if st.button('Show Brands    '):
-            Street_Light_Poles = pd.DataFrame(
+        #if st.button('Show Brands    '):
+        Street_Light_Poles = pd.DataFrame(
             [
                 {"Brand": "Ledvance", "Link": 'https://www.ledvance.asia'},
                 {"Brand": "Prilux", "Link": 'https://www.prilux.es'},
@@ -133,14 +133,14 @@ if submit and email == actual_email and password == actual_password:
                 {"Brand": "Light34/Light Solution(Oman)", "Link": "https://www.light34.com/en/outdoor-lighting-15"},
                 ]
             )
-            edited_Street_Light_Poles = st.experimental_data_editor(Street_Light_Poles, num_rows="dynamic")
+        edited_Street_Light_Poles = st.experimental_data_editor(Street_Light_Poles, num_rows="dynamic")
 
 # create an expander for the first light fixture
     with st.beta_expander('Emergency'):
     # add the selectbox for the brands
         st.image('https://trevos.eu/upload/produkty/HELIOS-LED/HELIOS-LED/fotogalerie/HELIOS-LED_01.jpg', use_column_width=True)
-        if st.button('Show Brands     '):
-            Emergency = pd.DataFrame(
+        #if st.button('Show Brands     '):
+        Emergency = pd.DataFrame(
             [
                 {"Brand": "Trevos", "Link": "https://trevos.eu"},
                 {"Brand": "Frater", "Link": 'https://fraterlighting.com'},
@@ -152,7 +152,7 @@ if submit and email == actual_email and password == actual_password:
                 {"Brand": "Eaton", "Link": "https://www.eaton.com/gb/en-gb/products.html"},
                 ]
             )
-            edited_Emergency = st.experimental_data_editor(Emergency, num_rows="dynamic")
+        edited_Emergency = st.experimental_data_editor(Emergency, num_rows="dynamic")
 
 elif submit and email != actual_email and password != actual_password:
     st.error("Login failed")
