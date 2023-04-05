@@ -20,15 +20,7 @@ if submit and email == actual_email and password == actual_password:
     # clear the form/container and display a success message
     placeholder.empty()
     st.success("Login successful")
-elif submit and email != actual_email and password != actual_password:
-    st.error("Login failed")
-else:
-    pass
-
-
-
-
-# create the Streamlit app object
+    # create the Streamlit app object
 st.title("Light Fixtures Dashboard")
 
 # create an expander for the first light fixture
@@ -171,6 +163,15 @@ with st.beta_expander('Emergency'):
         )
 
         edited_Emergency = st.experimental_data_editor(Emergency, num_rows="dynamic")
+
+elif submit and email != actual_email and password != actual_password:
+    st.error("Login failed")
+else:
+    pass
+
+
+
+
 
 
 
