@@ -29,7 +29,7 @@ else:
 
 
 # create the Streamlit app object
-st.title("Light Fixtures Dashboard")
+ds=st.show(st.title("Light Fixtures Dashboard")
 
 # create an expander for the first light fixture
 with st.beta_expander('Industrial Lighting'):
@@ -171,9 +171,7 @@ with st.beta_expander('Emergency'):
         )
 
         edited_Emergency = st.experimental_data_editor(Emergency, num_rows="dynamic")
-
-
-
+)
 
 
 
