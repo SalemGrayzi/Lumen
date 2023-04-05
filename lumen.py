@@ -25,17 +25,13 @@ with st.beta_expander('Industrial Lighting'):
     #st.write(f'The website for {brand_name} is {brands[brand_name]}.')
     
     
-#df = pd.DataFrame(
+    
+    
+df = pd.DataFrame(
     [
-#        {"command": "st.selectbox", "rating": 4, "is_widget": True},
-#        {"command": "st.balloons", "rating": 5, "is_widget": False},
-#        {"command": "st.time_input", "rating": 3, "is_widget": True},
-#    ]
-#)
-
-#df = load_data()
-edited_df = st.experimental_data_editor(brands) # 👈 An editable dataframe
-
-favorite_command = edited_df.loc[edited_df["rating"].idxmax()]["command"]
-st.markdown(f"Your favorite command is **{favorite_command}** 🎈")
+        {"command": "st.selectbox", "rating": 4, "is_widget": True},
+        {"command": "st.balloons", "rating": 5, "is_widget": False},
+        {"command": "st.time_input", "rating": 3, "is_widget": True},
+    ]
+)
 
