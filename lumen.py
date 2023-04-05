@@ -14,9 +14,8 @@ with placeholder.form("login"):
     email = st.text_input("Email")
     password = st.text_input("Password", type="password")
     submit = st.form_submit_button("Login")
-    url = "https://share.streamlit.io/mesmith027/streamlit_webapps/main/MC_pi/streamlit_app.py"
-    st.write("check out this [link](%s)" % url)
-    st.markdown("check out this [link](%s)" % url)
+    url = "https://lumen.ae"
+    st.write("Visit Our Website [link](%s)" % url)
 
 if submit and email == actual_email and password == actual_password:
     # If the form is submitted and the email and password are correct,
