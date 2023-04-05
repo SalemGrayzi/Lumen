@@ -1,4 +1,5 @@
 import streamlit as st
+import pandas as pd
 
 # create a dictionary with the brand names and their websites
 brands = {
