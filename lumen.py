@@ -5,14 +5,14 @@ import pandas as pd
 # Create an empty container
 placeholder = st.empty()
 
-actual_email = "email"
-actual_password = "password"
+actual_email = "e"
+actual_password = "p"
 
 # Insert a form in the container
 with placeholder.form("login"):
     st.markdown("#### Enter your credentials")
-    email = st.text_input("e")
-    password = st.text_input("Password", type="p")
+    email = st.text_input("Email")
+    password = st.text_input("Password", type="password")
     submit = st.form_submit_button("Login")
 
 if submit and email == actual_email and password == actual_password:
