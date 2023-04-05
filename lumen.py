@@ -36,7 +36,7 @@ with st.expander('Industrial Lighting'): ##with st.beta_expander('Industrial Lig
 with st.expander('Downlight/Spotlight/Tracklights/LED Panel'): ##with st.beta_expander('Downlight/Spotlight/Tracklights'):
     # add the selectbox for the brands
     st.image('https://storage.googleapis.com/tryka-dev.appspot.com/Products/Downlights/Abner%203/Renders/Abner%203_R_White.webp', use_column_width=True)
-    if st.button('Show Brands '):
+    if st.checkbox('Show Brands '):
         Downlight_Spotlight_Tracklights = pd.DataFrame(
         [
             {"Brand": "Ledvance", "Link": 'https://www.ledvance.asia'},
@@ -61,7 +61,7 @@ with st.expander('Downlight/Spotlight/Tracklights/LED Panel'): ##with st.beta_ex
 with st.expander('Wall-Mount'): ##with st.beta_expander('Wall-Mount'):
     # add the selectbox for the brands
     st.image('https://storage.googleapis.com/tryka-dev.appspot.com/Products/Architectural%20Accent/Tuba%204%20UpDown/Renders/Tuba%204%20UpDown_R_Grey.webp', use_column_width=True)
-    if st.button('Show Brands  '):
+    if st.checkbox('Show Brands  '):
         Wall_Mount = pd.DataFrame(
         [
             {"Brand": "Tryka", "Link": "https://tryka.com/products"},
@@ -80,7 +80,7 @@ with st.expander('Wall-Mount'): ##with st.beta_expander('Wall-Mount'):
 with st.expander('HighBay/FloodLights'): ##with st.beta_expander('HighBay/Flood'):
     # add the selectbox for the brands
     st.image('https://www.trilux.com/products/asset/GroupImageMedium/Ondo_T_TB_LED_03_DB_WEB', use_column_width=True)
-    if st.button('Show Brands   '):
+    if st.checkbox('Show Brands   '):
         HighBay_Flood_Lights = pd.DataFrame(
         [
             {"Brand": "Ledvance", "Link": 'https://www.ledvance.asia'},
@@ -108,7 +108,7 @@ with st.expander('HighBay/FloodLights'): ##with st.beta_expander('HighBay/Flood'
 with st.expander('Street Light/Poles'): ##with st.beta_expander('Street Light/Poles'):
     # add the selectbox for the brands
     st.image('https://d7rh5s3nxmpy4.cloudfront.net/CMP1303/prilux-versa-xl.png', use_column_width=True)
-    if st.button('Show Brands    '):
+    if st.checkbox('Show Brands    '):
         Street_Light_Poles = pd.DataFrame(
         [
             {"Brand": "Ledvance", "Link": 'https://www.ledvance.asia'},
@@ -129,7 +129,7 @@ with st.expander('Street Light/Poles'): ##with st.beta_expander('Street Light/Po
 with st.expander('Emergency'): ##with st.beta_expander('Emergency'):
     # add the selectbox for the brands
     st.image('https://trevos.eu/upload/produkty/HELIOS-LED/HELIOS-LED/fotogalerie/HELIOS-LED_01.jpg', use_column_width=True)
-    if st.button('Show Brands     '):
+    if st.checkbox('Show Brands     '):
         Emergency = pd.DataFrame(
         [
             {"Brand": "Trevos", "Link": "https://trevos.eu"},
@@ -145,3 +145,29 @@ with st.expander('Emergency'): ##with st.beta_expander('Emergency'):
 
         st.dataframe(Emergency)##edited_Industrial_Lighting = st.experimental_data_editor(Emergency, num_rows="dynamic")
 
+
+
+
+
+
+
+
+
+#            {"Brand": "Ledvance", "Link": 'https://www.ledvance.asia'},
+#            {"Brand": "Prilux", "Link": 'https://www.prilux.es'},
+#            {"Brand": "Trevos", "Link": "https://trevos.eu"},
+#            {"Brand": "NVC", "Link": 'https://www.nvc-international.com/product_list.php?x=10'},
+#            {"Brand": "Frater", "Link": 'https://fraterlighting.com'},
+#            {"Brand": "Gewis", "Link": 'https://www.gewiss.com/ww/en/'},
+#            {"Brand": "Dextra", "Link": 'https://www.dextragroup.co.uk/dextra-lighting/'},
+#            {"Brand": "Trilux", "Link": "https://www.trilux.com/en/"},
+#            {"Brand": "Stahl", "Link": "https://r-stahl.com/en/global/products/"},
+#            {"Brand": "Cooper Lighting", "Link": "https://www.cooperlighting.com/global/search?#tab=products"},
+#            {"Brand": "Ikizler", "Link": "https://www.ikizlerlighting.com"},
+#            {"Brand": "Bartec", "Link": "https://www.bartec.de/en/products/control-and-connection-equipment/lighting-technology/"},
+#            {"Brand": "Eaton", "Link": "https://www.eaton.com/gb/en-gb/products.html"},
+#            {"Brand": "Heper Lighting", "Link": "https://heperlighting.com/products/"},
+#            {"Brand": "Light34/Light Solution(Oman)", "Link": "https://www.light34.com/en/outdoor-lighting-15"},
+#            {"Brand": "Yente", "Link": "https://www.yente.com/en/light-poles"},
+#            {"Brand": "Al Babtain", "Link": "http://www.al-babtain.com.sa/our-facility/pole-and-high-mast/"},
+#            {"Brand": "MGL Lighting", "Link": "http://www.mgl-led.com/commercial-lighting"},
