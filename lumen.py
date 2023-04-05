@@ -152,6 +152,8 @@ if submit and email == actual_email and password == actual_password:
                 {"Brand": "Ikizler", "Link": "https://www.ikizlerlighting.com"},
                 {"Brand": "Bartec", "Link": "https://www.bartec.de/en/products/control-and-connection-equipment/lighting-technology/"},
                 {"Brand": "Eaton", "Link": "https://www.eaton.com/gb/en-gb/products.html"},
+                {"Brand": "Gulf Safety ", "Link": "https://gulfsafety.com"},
+
                 ]
             )
         edited_Emergency = st.experimental_data_editor(Emergency, num_rows="dynamic")
@@ -180,3 +182,5 @@ else:
 #            {"Brand": "Yente", "Link": "https://www.yente.com/en/light-poles"},
 #            {"Brand": "Al Babtain", "Link": "http://www.al-babtain.com.sa/our-facility/pole-and-high-mast/"},
 #            {"Brand": "MGL Lighting", "Link": "http://www.mgl-led.com/commercial-lighting"},
+#            {"Brand": "Gulf Safety ", "Link": "https://gulfsafety.com"},
+
