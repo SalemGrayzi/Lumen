@@ -45,70 +45,55 @@ if submit and email == actual_email and password == actual_password:
 
                 ]
             )
-
             edited_Industrial_Lighting = st.experimental_data_editor(Industrial_Lighting, num_rows="dynamic")
 
-elif submit and email != actual_email and password != actual_password:
-    st.error("Login failed")
-else:
-    pass
-
-
-
-
-# create the Streamlit app object
-st.title("Light Fixtures Dashboard")
+# create an expander for the first light fixture
+    with st.beta_expander('Downlight/Spotlight/Tracklights/LED Panel'):
+    # add the selectbox for the brands
+        st.image('https://storage.googleapis.com/tryka-dev.appspot.com/Products/Downlights/Abner%203/Renders/Abner%203_R_White.webp', use_column_width=True)
+        if st.checkbox('Show Brands '):
+            Downlight_Spotlight_Tracklights = pd.DataFrame(
+            [
+                {"Brand": "Ledvance", "Link": 'https://www.ledvance.asia'},
+                {"Brand": "Prilux", "Link": 'https://www.prilux.es'},
+                {"Brand": "NVC", "Link": 'https://www.nvc-international.com/product_list.php?x=10'},
+                {"Brand": "Frater", "Link": 'https://fraterlighting.com'},
+                {"Brand": "Tryka", "Link": "https://tryka.com/products"},
+                {"Brand": "Gewis", "Link": 'https://www.gewiss.com/ww/en/'},
+                {"Brand": "Dextra", "Link": 'https://www.dextragroup.co.uk/dextra-lighting/'},
+                {"Brand": "Trilux", "Link": "https://www.trilux.com/en/"},
+                {"Brand": "Intra Lighting", "Link": 'https://www.intra-lighting.com'},
+                {"Brand": "Delta Light", "Link": 'https://deltalight.com/en/products?perPage=12&filters[collection]=14b97380-4974-11ed-a67a-00505693bd3f&filters[location]=7a8f0b24-2f76-11ed-9132-00505693b57f&sorting=newest'},
+                {"Brand": "Cooper Lighting", "Link": "https://www.cooperlighting.com/global/search?#tab=products"},
+                {"Brand": "Ikizler", "Link": "https://www.ikizlerlighting.com"},
+                ]
+            )
+            edited_Downlight_Spotlight = st.experimental_data_editor(Downlight_Spotlight_Tracklights, num_rows="dynamic")
 
 
 # create an expander for the first light fixture
-with st.beta_expander('Downlight/Spotlight/Tracklights/LED Panel'):
+    with st.beta_expander('Wall-Mount'):
     # add the selectbox for the brands
-    st.image('https://storage.googleapis.com/tryka-dev.appspot.com/Products/Downlights/Abner%203/Renders/Abner%203_R_White.webp', use_column_width=True)
-    if st.checkbox('Show Brands '):
-        Downlight_Spotlight_Tracklights = pd.DataFrame(
-        [
-            {"Brand": "Ledvance", "Link": 'https://www.ledvance.asia'},
-            {"Brand": "Prilux", "Link": 'https://www.prilux.es'},
-            {"Brand": "NVC", "Link": 'https://www.nvc-international.com/product_list.php?x=10'},
-            {"Brand": "Frater", "Link": 'https://fraterlighting.com'},
-            {"Brand": "Tryka", "Link": "https://tryka.com/products"},
-            {"Brand": "Gewis", "Link": 'https://www.gewiss.com/ww/en/'},
-            {"Brand": "Dextra", "Link": 'https://www.dextragroup.co.uk/dextra-lighting/'},
-            {"Brand": "Trilux", "Link": "https://www.trilux.com/en/"},
-            {"Brand": "Intra Lighting", "Link": 'https://www.intra-lighting.com'},
-            {"Brand": "Delta Light", "Link": 'https://deltalight.com/en/products?perPage=12&filters[collection]=14b97380-4974-11ed-a67a-00505693bd3f&filters[location]=7a8f0b24-2f76-11ed-9132-00505693b57f&sorting=newest'},
-            {"Brand": "Cooper Lighting", "Link": "https://www.cooperlighting.com/global/search?#tab=products"},
-            {"Brand": "Ikizler", "Link": "https://www.ikizlerlighting.com"},
-            ]
-        )
-
-        edited_Downlight_Spotlight = st.experimental_data_editor(Downlight_Spotlight_Tracklights, num_rows="dynamic")
-
-
-# create an expander for the first light fixture
-with st.beta_expander('Wall-Mount'):
-    # add the selectbox for the brands
-    st.image('https://storage.googleapis.com/tryka-dev.appspot.com/Products/Architectural%20Accent/Tuba%204%20UpDown/Renders/Tuba%204%20UpDown_R_Grey.webp', use_column_width=True)
-    if st.checkbox('Show Brands  '):
+        st.image('https://storage.googleapis.com/tryka-dev.appspot.com/Products/Architectural%20Accent/Tuba%204%20UpDown/Renders/Tuba%204%20UpDown_R_Grey.webp', use_column_width=True)
+        if st.checkbox('Show Brands  '):
         Wall_Mount = pd.DataFrame(
-        [
-            {"Brand": "Tryka", "Link": "https://tryka.com/products"},
-            {"Brand": "Dextra", "Link": 'https://www.dextragroup.co.uk/dextra-lighting/'},
-            {"Brand": "Trilux", "Link": "https://www.trilux.com/en/"},
-            {"Brand": "Delta Light", "Link": 'https://deltalight.com/en/products?perPage=12&filters[collection]=14b97380-4974-11ed-a67a-00505693bd3f&filters[location]=7a8f0b24-2f76-11ed-9132-00505693b57f&sorting=newest'},
-            {"Brand": "Cooper Lighting", "Link": "https://www.cooperlighting.com/global/search?#tab=products"},
-            {"Brand": "Heper Lighting", "Link": "https://heperlighting.com/products/"},
-            {"Brand": "Light34/Light Solution(Oman)", "Link": "https://www.light34.com/en/outdoor-lighting-15"},
-            ]
-        )
-
-        edited_Wall_Mount = st.experimental_data_editor(Wall_Mount, num_rows="dynamic")
+            [
+                {"Brand": "Tryka", "Link": "https://tryka.com/products"},
+                {"Brand": "Dextra", "Link": 'https://www.dextragroup.co.uk/dextra-lighting/'},
+                {"Brand": "Trilux", "Link": "https://www.trilux.com/en/"},
+                {"Brand": "Delta Light", "Link": 'https://deltalight.com/en/products?perPage=12&filters[collection]=14b97380-4974-11ed-a67a-00505693bd3f&filters[location]=7a8f0b24-2f76-11ed-9132-00505693b57f&sorting=newest'},
+                {"Brand": "Cooper Lighting", "Link": "https://www.cooperlighting.com/global/search?#tab=products"},
+                {"Brand": "Heper Lighting", "Link": "https://heperlighting.com/products/"},
+                {"Brand": "Light34/Light Solution(Oman)", "Link": "https://www.light34.com/en/outdoor-lighting-15"},
+                ]
+            )
+            edited_Wall_Mount = st.experimental_data_editor(Wall_Mount, num_rows="dynamic")
 
 # create an expander for the first light fixture
-with st.beta_expander('HighBay/FloodLights'):
+    with st.beta_expander('HighBay/FloodLights'):
     # add the selectbox for the brands
-    st.image('https://www.trilux.com/products/asset/GroupImageMedium/Ondo_T_TB_LED_03_DB_WEB', use_column_width=True)
-    if st.checkbox('Show Brands   '):
+        st.image('https://www.trilux.com/products/asset/GroupImageMedium/Ondo_T_TB_LED_03_DB_WEB', use_column_width=True)
+        if st.checkbox('Show Brands   '):
         HighBay_Flood_Lights = pd.DataFrame(
         [
             {"Brand": "Ledvance", "Link": 'https://www.ledvance.asia'},
@@ -177,7 +162,10 @@ with st.beta_expander('Emergency'):
 
 
 
-
+elif submit and email != actual_email and password != actual_password:
+    st.error("Login failed")
+else:
+    pass
 
 
 #            {"Brand": "Ledvance", "Link": 'https://www.ledvance.asia'},
