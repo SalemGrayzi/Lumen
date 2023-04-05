@@ -5,7 +5,7 @@ import pandas as pd
 st.title("Light Fixtures Dashboard")
 
 # create an expander for the first light fixture
-with st.expander('Industrial Lighting'): ##with st.beta_expander('Industrial Lighting'):
+with st.beta_expander('Industrial Lighting'):
     # add the selectbox for the brands
     st.image('https://nvcuk.net/_panel/public/site-panel/products-subcategories/12/id12-image_1630478538.png', use_column_width=True)
     if st.checkbox('Show Brands'):
@@ -30,7 +30,7 @@ with st.expander('Industrial Lighting'): ##with st.beta_expander('Industrial Lig
             ]
         )
 
-        st.dataframe(Industrial_Lighting)##edited_Industrial_Lighting = st.experimental_data_editor(Industrial_Lighting, num_rows="dynamic")
+        edited_Industrial_Lighting = st.experimental_data_editor(Industrial_Lighting, num_rows="dynamic")
 
 # create an expander for the first light fixture
 with st.expander('Downlight/Spotlight/Tracklights/LED Panel'): ##with st.beta_expander('Downlight/Spotlight/Tracklights'):
