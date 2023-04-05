@@ -24,7 +24,7 @@ if submit and email == actual_email and password == actual_password:
     with st.beta_expander('Industrial Lighting'):
     # add the selectbox for the brands
         st.image('https://nvcuk.net/_panel/public/site-panel/products-subcategories/12/id12-image_1630478538.png', use_column_width=True)
-        if st.checkbox('Show Brands'):
+        if st.button('Show Brands'):
             Industrial_Lighting = pd.DataFrame(
             [
                 {"Brand": "Ledvance", "Link": 'https://www.ledvance.asia'},
@@ -51,7 +51,7 @@ if submit and email == actual_email and password == actual_password:
     with st.beta_expander('Downlight/Spotlight/Tracklights/LED Panel'):
     # add the selectbox for the brands
         st.image('https://storage.googleapis.com/tryka-dev.appspot.com/Products/Downlights/Abner%203/Renders/Abner%203_R_White.webp', use_column_width=True)
-        if st.checkbox('Show Brands '):
+        if st.button('Show Brands '):
             Downlight_Spotlight_Tracklights = pd.DataFrame(
             [
                 {"Brand": "Ledvance", "Link": 'https://www.ledvance.asia'},
@@ -75,7 +75,7 @@ if submit and email == actual_email and password == actual_password:
     with st.beta_expander('Wall-Mount'):
     # add the selectbox for the brands
         st.image('https://storage.googleapis.com/tryka-dev.appspot.com/Products/Architectural%20Accent/Tuba%204%20UpDown/Renders/Tuba%204%20UpDown_R_Grey.webp', use_column_width=True)
-        if st.checkbox('Show Brands  '):
+        if st.button('Show Brands  '):
             Wall_Mount = pd.DataFrame(
             [
                 {"Brand": "Tryka", "Link": "https://tryka.com/products"},
@@ -93,7 +93,7 @@ if submit and email == actual_email and password == actual_password:
     with st.beta_expander('HighBay/FloodLights'):
     # add the selectbox for the brands
         st.image('https://www.trilux.com/products/asset/GroupImageMedium/Ondo_T_TB_LED_03_DB_WEB', use_column_width=True)
-        if st.checkbox('Show Brands   '):
+        if st.button('Show Brands   '):
             HighBay_Flood_Lights = pd.DataFrame(
             [
                 {"Brand": "Ledvance", "Link": 'https://www.ledvance.asia'},
@@ -119,7 +119,7 @@ if submit and email == actual_email and password == actual_password:
     with st.beta_expander('Street Light/Poles'):
     # add the selectbox for the brands
         st.image('https://d7rh5s3nxmpy4.cloudfront.net/CMP1303/prilux-versa-xl.png', use_column_width=True)
-        if st.checkbox('Show Brands    '):
+        if st.button('Show Brands    '):
             Street_Light_Poles = pd.DataFrame(
             [
                 {"Brand": "Ledvance", "Link": 'https://www.ledvance.asia'},
@@ -139,7 +139,7 @@ if submit and email == actual_email and password == actual_password:
     with st.beta_expander('Emergency'):
     # add the selectbox for the brands
         st.image('https://trevos.eu/upload/produkty/HELIOS-LED/HELIOS-LED/fotogalerie/HELIOS-LED_01.jpg', use_column_width=True)
-        if st.checkbox('Show Brands     '):
+        if st.button('Show Brands     '):
             Emergency = pd.DataFrame(
             [
                 {"Brand": "Trevos", "Link": "https://trevos.eu"},
