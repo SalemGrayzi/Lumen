@@ -76,7 +76,7 @@ if submit and email == actual_email and password == actual_password:
     # add the selectbox for the brands
         st.image('https://storage.googleapis.com/tryka-dev.appspot.com/Products/Architectural%20Accent/Tuba%204%20UpDown/Renders/Tuba%204%20UpDown_R_Grey.webp', use_column_width=True)
         if st.checkbox('Show Brands  '):
-        Wall_Mount = pd.DataFrame(
+            Wall_Mount = pd.DataFrame(
             [
                 {"Brand": "Tryka", "Link": "https://tryka.com/products"},
                 {"Brand": "Dextra", "Link": 'https://www.dextragroup.co.uk/dextra-lighting/'},
@@ -94,73 +94,65 @@ if submit and email == actual_email and password == actual_password:
     # add the selectbox for the brands
         st.image('https://www.trilux.com/products/asset/GroupImageMedium/Ondo_T_TB_LED_03_DB_WEB', use_column_width=True)
         if st.checkbox('Show Brands   '):
-        HighBay_Flood_Lights = pd.DataFrame(
-        [
-            {"Brand": "Ledvance", "Link": 'https://www.ledvance.asia'},
-            {"Brand": "Prilux", "Link": 'https://www.prilux.es'},
-            {"Brand": "NVC", "Link": 'https://www.nvc-international.com/product_list.php?x=10'},
-            {"Brand": "Frater", "Link": 'https://fraterlighting.com'},
-            {"Brand": "Gewis", "Link": 'https://www.gewiss.com/ww/en/'},
-            {"Brand": "Dextra", "Link": 'https://www.dextragroup.co.uk/dextra-lighting/'},
-            {"Brand": "Trilux", "Link": "https://www.trilux.com/en/"},
-            {"Brand": "Stahl", "Link": "https://r-stahl.com/en/global/products/"},
-            {"Brand": "Cooper Lighting", "Link": "https://www.cooperlighting.com/global/search?#tab=products"},
-            {"Brand": "Ikizler", "Link": "https://www.ikizlerlighting.com"},
-            {"Brand": "Bartec", "Link": "https://www.bartec.de/en/products/control-and-connection-equipment/lighting-technology/"},
-            {"Brand": "Eaton", "Link": "https://www.eaton.com/gb/en-gb/products.html"},
-            {"Brand": "Heper Lighting", "Link": "https://heperlighting.com/products/"},
-            {"Brand": "Light34/Light Solution(Oman)", "Link": "https://www.light34.com/en/outdoor-lighting-15"},
-            {"Brand": "MGL Lighting", "Link": "http://www.mgl-led.com/commercial-lighting"},
-            ]
-        )
+            HighBay_Flood_Lights = pd.DataFrame(
+            [
+                {"Brand": "Ledvance", "Link": 'https://www.ledvance.asia'},
+                {"Brand": "Prilux", "Link": 'https://www.prilux.es'},
+                {"Brand": "NVC", "Link": 'https://www.nvc-international.com/product_list.php?x=10'},
+                {"Brand": "Frater", "Link": 'https://fraterlighting.com'},
+                {"Brand": "Gewis", "Link": 'https://www.gewiss.com/ww/en/'},
+                {"Brand": "Dextra", "Link": 'https://www.dextragroup.co.uk/dextra-lighting/'},
+                {"Brand": "Trilux", "Link": "https://www.trilux.com/en/"},
+                {"Brand": "Stahl", "Link": "https://r-stahl.com/en/global/products/"},
+                {"Brand": "Cooper Lighting", "Link": "https://www.cooperlighting.com/global/search?#tab=products"},
+                {"Brand": "Ikizler", "Link": "https://www.ikizlerlighting.com"},
+                {"Brand": "Bartec", "Link": "https://www.bartec.de/en/products/control-and-connection-equipment/lighting-technology/"},
+                {"Brand": "Eaton", "Link": "https://www.eaton.com/gb/en-gb/products.html"},
+                {"Brand": "Heper Lighting", "Link": "https://heperlighting.com/products/"},
+                {"Brand": "Light34/Light Solution(Oman)", "Link": "https://www.light34.com/en/outdoor-lighting-15"},
+                {"Brand": "MGL Lighting", "Link": "http://www.mgl-led.com/commercial-lighting"},
+                ]
+            )
+            edited_HighBay_Flood_Lights = st.experimental_data_editor(HighBay_Flood_Lights, num_rows="dynamic")
 
-        edited_HighBay_Flood_Lights = st.experimental_data_editor(HighBay_Flood_Lights, num_rows="dynamic")
-
+            # create an expander for the first light fixture
+    with st.beta_expander('Street Light/Poles'):
+    # add the selectbox for the brands
+        st.image('https://d7rh5s3nxmpy4.cloudfront.net/CMP1303/prilux-versa-xl.png', use_column_width=True)
+        if st.checkbox('Show Brands    '):
+            Street_Light_Poles = pd.DataFrame(
+            [
+                {"Brand": "Ledvance", "Link": 'https://www.ledvance.asia'},
+                {"Brand": "Prilux", "Link": 'https://www.prilux.es'},
+                {"Brand": "Frater", "Link": 'https://fraterlighting.com'},
+                {"Brand": "Gewis", "Link": 'https://www.gewiss.com/ww/en/'},
+                {"Brand": "Dextra", "Link": 'https://www.dextragroup.co.uk/dextra-lighting/'},
+                {"Brand": "Cooper Lighting", "Link": "https://www.cooperlighting.com/global/search?#tab=products"},
+                {"Brand": "Ikizler", "Link": "https://www.ikizlerlighting.com"},
+                {"Brand": "Heper Lighting", "Link": "https://heperlighting.com/products/"},
+                {"Brand": "Light34/Light Solution(Oman)", "Link": "https://www.light34.com/en/outdoor-lighting-15"},
+                ]
+            )
+            edited_Street_Light_Poles = st.experimental_data_editor(Street_Light_Poles, num_rows="dynamic")
 
 # create an expander for the first light fixture
-with st.beta_expander('Street Light/Poles'):
+    with st.beta_expander('Emergency'):
     # add the selectbox for the brands
-    st.image('https://d7rh5s3nxmpy4.cloudfront.net/CMP1303/prilux-versa-xl.png', use_column_width=True)
-    if st.checkbox('Show Brands    '):
-        Street_Light_Poles = pd.DataFrame(
-        [
-            {"Brand": "Ledvance", "Link": 'https://www.ledvance.asia'},
-            {"Brand": "Prilux", "Link": 'https://www.prilux.es'},
-            {"Brand": "Frater", "Link": 'https://fraterlighting.com'},
-            {"Brand": "Gewis", "Link": 'https://www.gewiss.com/ww/en/'},
-            {"Brand": "Dextra", "Link": 'https://www.dextragroup.co.uk/dextra-lighting/'},
-            {"Brand": "Cooper Lighting", "Link": "https://www.cooperlighting.com/global/search?#tab=products"},
-            {"Brand": "Ikizler", "Link": "https://www.ikizlerlighting.com"},
-            {"Brand": "Heper Lighting", "Link": "https://heperlighting.com/products/"},
-            {"Brand": "Light34/Light Solution(Oman)", "Link": "https://www.light34.com/en/outdoor-lighting-15"},
-            ]
-        )
-
-        edited_Street_Light_Poles = st.experimental_data_editor(Street_Light_Poles, num_rows="dynamic")
-
-# create an expander for the first light fixture
-with st.beta_expander('Emergency'):
-    # add the selectbox for the brands
-    st.image('https://trevos.eu/upload/produkty/HELIOS-LED/HELIOS-LED/fotogalerie/HELIOS-LED_01.jpg', use_column_width=True)
-    if st.checkbox('Show Brands     '):
-        Emergency = pd.DataFrame(
-        [
-            {"Brand": "Trevos", "Link": "https://trevos.eu"},
-            {"Brand": "Frater", "Link": 'https://fraterlighting.com'},
-            {"Brand": "Dextra", "Link": 'https://www.dextragroup.co.uk/dextra-lighting/'},
-            {"Brand": "Stahl", "Link": "https://r-stahl.com/en/global/products/"},
-            {"Brand": "Cooper Lighting", "Link": "https://www.cooperlighting.com/global/search?#tab=products"},
-            {"Brand": "Ikizler", "Link": "https://www.ikizlerlighting.com"},
-            {"Brand": "Bartec", "Link": "https://www.bartec.de/en/products/control-and-connection-equipment/lighting-technology/"},
-            {"Brand": "Eaton", "Link": "https://www.eaton.com/gb/en-gb/products.html"},
-            ]
-        )
-
-        edited_Emergency = st.experimental_data_editor(Emergency, num_rows="dynamic")
-
-
-
-
+        st.image('https://trevos.eu/upload/produkty/HELIOS-LED/HELIOS-LED/fotogalerie/HELIOS-LED_01.jpg', use_column_width=True)
+        if st.checkbox('Show Brands     '):
+            Emergency = pd.DataFrame(
+            [
+                {"Brand": "Trevos", "Link": "https://trevos.eu"},
+                {"Brand": "Frater", "Link": 'https://fraterlighting.com'},
+                {"Brand": "Dextra", "Link": 'https://www.dextragroup.co.uk/dextra-lighting/'},
+                {"Brand": "Stahl", "Link": "https://r-stahl.com/en/global/products/"},
+                {"Brand": "Cooper Lighting", "Link": "https://www.cooperlighting.com/global/search?#tab=products"},
+                {"Brand": "Ikizler", "Link": "https://www.ikizlerlighting.com"},
+                {"Brand": "Bartec", "Link": "https://www.bartec.de/en/products/control-and-connection-equipment/lighting-technology/"},
+                {"Brand": "Eaton", "Link": "https://www.eaton.com/gb/en-gb/products.html"},
+                ]
+            )
+            edited_Emergency = st.experimental_data_editor(Emergency, num_rows="dynamic")
 
 elif submit and email != actual_email and password != actual_password:
     st.error("Login failed")
