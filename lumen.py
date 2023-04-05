@@ -190,7 +190,7 @@ def add_bg_from_url():
          f"""
          <style>
          .stApp {{
-             background-image: url("https://github.com/SalemGrayzi/Lumen/blob/main/card.jpg?raw=true");
+             background-image: url("https://github.com/SalemGrayzi/Lumen/blob/main/diamond.jpg?raw=true");
              background-attachment: fixed;
              background-size: cover
          }}
