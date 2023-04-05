@@ -23,9 +23,9 @@ if submit and email == actual_email and password == actual_password:
     st.title("Light Fixtures Dashboard")
     with st.beta_expander('Industrial Lighting'):
     # add the selectbox for the brands
-    st.image('https://nvcuk.net/_panel/public/site-panel/products-subcategories/12/id12-image_1630478538.png', use_column_width=True)
-    if st.checkbox('Show Brands'):
-        Industrial_Lighting = pd.DataFrame(
+        st.image('https://nvcuk.net/_panel/public/site-panel/products-subcategories/12/id12-image_1630478538.png', use_column_width=True)
+        if st.checkbox('Show Brands'):
+            Industrial_Lighting = pd.DataFrame(
         [
             {"Brand": "Ledvance", "Link": 'https://www.ledvance.asia'},
             {"Brand": "Prilux", "Link": 'https://www.prilux.es'},
