@@ -185,33 +185,19 @@ else:
 #            {"Brand": "Gulf Safety ", "Link": "https://gulfsafety.com"},
 
 
-#def add_bg_from_url():
-#    st.markdown(
-#         f"""
-#         <style>
-#         .stApp {{
-#             background-image: url("https://github.com/SalemGrayzi/Lumen/blob/main/diamond.jpg?raw=true");
-#             background-attachment: fixed;
-#             background-size: cover
-#         }}
-#         </style>
-#         """,
-#         unsafe_allow_html=True
-#     )
+def add_bg_from_url():
+    st.markdown(
+         f"""
+         <style>
+         .stApp {{
+             background-image: url("https://github.com/SalemGrayzi/Lumen/blob/main/diamond.jpg?raw=true");
+             background-attachment: fixed;
+             background-size: cover
+         }}
+         </style>
+         """,
+         unsafe_allow_html=True
+     )
 
-#add_bg_from_url() 
+add_bg_from_url() 
 
-def set_png_as_page_bg(png_file):
-    bin_str = get_base64_of_bin_file2(png_file) 
-    page_bg_img = '''
-    <style>
-    .stApp {
-    background-image: https://github.com/SalemGrayzi/Lumen/blob/main/diamond.jpg?raw=true;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-attachment: scroll; # doesn't work
-    }
-    </style>
-    ''' % bin_str
-    st.markdown(page_bg_img, unsafe_allow_html=True)
-    return
