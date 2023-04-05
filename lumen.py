@@ -33,7 +33,7 @@ with st.beta_expander('Industrial Lighting'):
         edited_Industrial_Lighting = st.experimental_data_editor(Industrial_Lighting, num_rows="dynamic")
 
 # create an expander for the first light fixture
-with st.expander('Downlight/Spotlight/Tracklights/LED Panel'): ##with st.beta_expander('Downlight/Spotlight/Tracklights'):
+with st.beta_expander('Downlight/Spotlight/Tracklights/LED Panel'):
     # add the selectbox for the brands
     st.image('https://storage.googleapis.com/tryka-dev.appspot.com/Products/Downlights/Abner%203/Renders/Abner%203_R_White.webp', use_column_width=True)
     if st.checkbox('Show Brands '):
@@ -54,11 +54,11 @@ with st.expander('Downlight/Spotlight/Tracklights/LED Panel'): ##with st.beta_ex
             ]
         )
 
-        st.dataframe(Downlight_Spotlight_Tracklights)##edited_Downlight_Spotlight = st.experimental_data_editor(Downlight_Spotlight_Tracklights, num_rows="dynamic")
+        edited_Downlight_Spotlight = st.experimental_data_editor(Downlight_Spotlight_Tracklights, num_rows="dynamic")
 
 
 # create an expander for the first light fixture
-with st.expander('Wall-Mount'): ##with st.beta_expander('Wall-Mount'):
+with st.beta_expander('Wall-Mount'):
     # add the selectbox for the brands
     st.image('https://storage.googleapis.com/tryka-dev.appspot.com/Products/Architectural%20Accent/Tuba%204%20UpDown/Renders/Tuba%204%20UpDown_R_Grey.webp', use_column_width=True)
     if st.checkbox('Show Brands  '):
@@ -74,10 +74,10 @@ with st.expander('Wall-Mount'): ##with st.beta_expander('Wall-Mount'):
             ]
         )
 
-        st.dataframe(Wall_Mount)##edited_Wall_Mount = st.experimental_data_editor(Wall_Mount, num_rows="dynamic")
+        edited_Wall_Mount = st.experimental_data_editor(Wall_Mount, num_rows="dynamic")
 
 # create an expander for the first light fixture
-with st.expander('HighBay/FloodLights'): ##with st.beta_expander('HighBay/Flood'):
+with st.beta_expander('HighBay/FloodLights'):
     # add the selectbox for the brands
     st.image('https://www.trilux.com/products/asset/GroupImageMedium/Ondo_T_TB_LED_03_DB_WEB', use_column_width=True)
     if st.checkbox('Show Brands   '):
@@ -101,11 +101,11 @@ with st.expander('HighBay/FloodLights'): ##with st.beta_expander('HighBay/Flood'
             ]
         )
 
-        st.dataframe(HighBay_Flood_Lights)##edited_Industrial_Lighting = st.experimental_data_editor(HighBay_Flood_Lights, num_rows="dynamic")
+        edited_HighBay_Flood_Lights = st.experimental_data_editor(HighBay_Flood_Lights, num_rows="dynamic")
 
 
 # create an expander for the first light fixture
-with st.expander('Street Light/Poles'): ##with st.beta_expander('Street Light/Poles'):
+with st.beta_expander('Street Light/Poles'):
     # add the selectbox for the brands
     st.image('https://d7rh5s3nxmpy4.cloudfront.net/CMP1303/prilux-versa-xl.png', use_column_width=True)
     if st.checkbox('Show Brands    '):
@@ -123,10 +123,10 @@ with st.expander('Street Light/Poles'): ##with st.beta_expander('Street Light/Po
             ]
         )
 
-        st.dataframe(Street_Light_Poles)##edited_Industrial_Lighting = st.experimental_data_editor(Street_Light_Poles, num_rows="dynamic")
+        edited_Street_Light_Poles = st.experimental_data_editor(Street_Light_Poles, num_rows="dynamic")
 
 # create an expander for the first light fixture
-with st.expander('Emergency'): ##with st.beta_expander('Emergency'):
+with st.beta_expander('Emergency'):
     # add the selectbox for the brands
     st.image('https://trevos.eu/upload/produkty/HELIOS-LED/HELIOS-LED/fotogalerie/HELIOS-LED_01.jpg', use_column_width=True)
     if st.checkbox('Show Brands     '):
@@ -143,7 +143,7 @@ with st.expander('Emergency'): ##with st.beta_expander('Emergency'):
             ]
         )
 
-        st.dataframe(Emergency)##edited_Industrial_Lighting = st.experimental_data_editor(Emergency, num_rows="dynamic")
+        edited_Emergency = st.experimental_data_editor(Emergency, num_rows="dynamic")
 
 
 
