@@ -5,12 +5,12 @@ import pandas as pd
 # Create an empty container
 placeholder = st.empty()
 
-actual_email = "e"
-actual_password = "p"
+actual_email = ""
+actual_password = ""
 
 # Insert a form in the container
 with placeholder.form("login"):
-    st.markdown("#### Enter your credentials")
+    st.markdown("#### For Lumen Employees Only")
     email = st.text_input("Email")
     password = st.text_input("Password", type="password")
     submit = st.form_submit_button("Login")
