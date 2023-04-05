@@ -15,7 +15,7 @@ with placeholder.form("login"):
     password = st.text_input("Password", type="password")
     submit = st.form_submit_button("Login")
     url = "https://lumen.ae"
-    st.button("Visit Our [Website](%s)" % url)
+    st.write("[Visit Our Website](%s)" % url)
 
 if submit and email == actual_email and password == actual_password:
     # If the form is submitted and the email and password are correct,
