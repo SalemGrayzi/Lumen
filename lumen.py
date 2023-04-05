@@ -28,6 +28,9 @@ with st.beta_expander('Industrial Lighting'):
     
     
     
+import streamlit as st
+import pandas as pd
+
 df = pd.DataFrame(
     [
         {"command": "st.selectbox", "rating": 4, "is_widget": True},
@@ -36,8 +39,4 @@ df = pd.DataFrame(
     ]
 )
 
-df = load_data()
-edited_df = st.experimental_data_editor(df) # 👈 An editable dataframe
-
-favorite_command = edited_df.loc[edited_df["rating"].idxmax()]["command"]
-st.markdown(f"Your favorite command is **{favorite_command}** 🎈")
+st.dataframe(df, use_container_width=True)
