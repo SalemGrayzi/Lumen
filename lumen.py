@@ -201,14 +201,17 @@ else:
 
 #add_bg_from_url() 
 
-def set_background(png_file):
-    bin_str = get_base64(png_file)
+def set_png_as_page_bg(png_file):
+    bin_str = get_base64_of_bin_file2(png_file) 
     page_bg_img = '''
     <style>
     .stApp {
     background-image: https://github.com/SalemGrayzi/Lumen/blob/main/diamond.jpg?raw=true("data:image/png;base64,%s");
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-attachment: scroll; # doesn't work
     }
     </style>
     ''' % bin_str
     st.markdown(page_bg_img, unsafe_allow_html=True)
+    return
